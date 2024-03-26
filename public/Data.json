@@ -8,7 +8,7 @@
       "totalPages": 218,
       "rating": 4.5,
       "category": "Fiction",
-      "tags": ["Classic", "Romance", "American Literature"],
+      "tags": ["Classic", "Romance" ],
       "publisher": "Charles Scribner's Sons",
       "yearOfPublishing": 1925
     },
@@ -21,7 +21,7 @@
       "totalPages": 324,
       "rating": 4.8,
       "category": "Fiction",
-      "tags": ["Classic", "Social Justice", "Coming of Age"],
+      "tags": ["Classic", "Coming of Age"],
       "publisher": "J. B. Lippincott & Co.",
       "yearOfPublishing": 1960
     },
@@ -34,7 +34,7 @@
       "totalPages": 208,
       "rating": 4.3,
       "category": "Science Fiction",
-      "tags": ["Humor", "Adventure", "Satire"],
+      "tags": ["Humor",  "Satire"],
       "publisher": "Pan Books",
       "yearOfPublishing": 1979
     },
@@ -47,7 +47,7 @@
       "totalPages": 328,
       "rating": 4.6,
       "category": "Fiction",
-      "tags": ["Dystopian", "Political", "Classic"],
+      "tags": [ "Political", "Classic"],
       "publisher": "Secker & Warburg",
       "yearOfPublishing": 1949
     },
@@ -60,7 +60,7 @@
       "totalPages": 279,
       "rating": 4.7,
       "category": "Fiction",
-      "tags": ["Romance", "Classic", "British Literature"],
+      "tags": ["Romance", "Classic"],
       "publisher": "T. Egerton, Whitehall",
       "yearOfPublishing": 1813
     },
@@ -73,7 +73,7 @@
       "totalPages": 277,
       "rating": 4.2,
       "category": "Fiction",
-      "tags": ["Coming of Age", "American Literature", "Classic"],
+      "tags": ["Coming of Age", "Classic"],
       "publisher": "Little, Brown and Company",
       "yearOfPublishing": 1951
     },
@@ -86,7 +86,7 @@
       "totalPages": 1178,
       "rating": 4.9,
       "category": "Fantasy",
-      "tags": ["Epic", "Adventure", "High Fantasy"],
+      "tags": ["Epic", "Adventure"],
       "publisher": "George Allen & Unwin",
       "yearOfPublishing": 1954
     },
@@ -99,7 +99,7 @@
       "totalPages": 223,
       "rating": 4.7,
       "category": "Fantasy",
-      "tags": ["Magic", "Adventure", "Children's Literature"],
+      "tags": ["Magic", "Adventure"],
       "publisher": "Bloomsbury",
       "yearOfPublishing": 1997
     },
@@ -112,7 +112,7 @@
       "totalPages": 310,
       "rating": 4.6,
       "category": "Fantasy",
-      "tags": ["Adventure", "Quest", "Children's Literature"],
+      "tags": ["Adventure", "Quest"],
       "publisher": "George Allen & Unwin",
       "yearOfPublishing": 1937
     },
@@ -125,7 +125,7 @@
       "totalPages": 311,
       "rating": 4.4,
       "category": "Science Fiction",
-      "tags": ["Dystopian", "Social Commentary", "Classic"],
+      "tags": ["Dystopian", "Social Commentary" ],
       "publisher": "Chatto & Windus",
       "yearOfPublishing": 1932
     },
@@ -138,7 +138,7 @@
         "totalPages": 671,
         "rating": 4.8,
         "category": "Fiction",
-        "tags": ["Psychological", "Classic", "Russian Literature"],
+        "tags": ["Psychological", "Classic"],
         "publisher": "The Russian Messenger",
         "yearOfPublishing": 1866
       },
@@ -151,7 +151,7 @@
         "totalPages": 796,
         "rating": 4.7,
         "category": "Fiction",
-        "tags": ["Philosophical", "Classic", "Russian Literature"],
+        "tags": ["Philosophical", "Classic"],
         "publisher": "The Russian Messenger",
         "yearOfPublishing": 1880
       }
