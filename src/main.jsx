@@ -12,6 +12,7 @@ import ListedBook from './Pages/LIstedBook/ListedBook';
 import PagesRead from './Pages/PagesRead/PagesRead';
 import MainLayout from './Layout/MainLayout/MainLayout';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
+import BookDetail from './Components/BookDetail/BookDetail';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         path: "pagesRead",
         element: <PagesRead></PagesRead>,
       },
+      {
+        path: "bookDetail",
+        element: <BookDetail></BookDetail>
+      }
     ]
   },
 ]);
