@@ -25,6 +25,7 @@ const BookDetail = () => {
 
     function addData(){
         setReadBookDataLS(singleBook)
+        
    
     }
     function wishAddData(){

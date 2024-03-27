@@ -1,14 +1,17 @@
+import { toast } from "react-toastify";
 
 export const setReadBookDataLS = (data)=>{
     const saveReadBook = JSON.parse(localStorage.getItem('ReadBook') )|| [];
     const exitReadBook = saveReadBook.find(item => item.bookId ==data.bookId)
     if(!exitReadBook){
         saveReadBook.push(data)
+        toast("book added read book")
         localStorage.setItem("ReadBook",JSON.stringify(saveReadBook));
         
 
     } else {
-        alert('already ache')
+        toast.warning("already added!")
+
     }
 }
 export const getReadBookDataLS = () => {
@@ -20,10 +23,13 @@ export const setWishBookDataLS = (data) => {
     const saveWishListBook = JSON.parse(localStorage.getItem('WishListBook')) || [];
     const existInWishList = saveWishListBook.find(item => item.bookId == data.bookId);
     if (!existInWishList) {
+
         saveWishListBook.push(data);
+        toast("book added wish List")
+
         localStorage.setItem("WishListBook", JSON.stringify(saveWishListBook));
     } else {
-        alert('Book already exists in the wishlist.');
+        toast.warning("already added!")
     }
 }
 
