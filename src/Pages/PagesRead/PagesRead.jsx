@@ -91,7 +91,7 @@ const PagesRead = () => {
   };
 
   return (
-    <ResponsiveContainer width="75%" aspect={2}>
+    <ResponsiveContainer width="76%" aspect={2}>
     <BarChart
       width={900}
       height={300}
