@@ -3,6 +3,7 @@ import {  getWishListBookDataLS } from "../../Utils/LocalStorage";
 import { GrDocument } from "react-icons/gr";
 import { HiMiniUsers } from "react-icons/hi2";
 import { IoLocationOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const WishlistBook = () => {
     const [WishListData, setWishLitData] = useState([]);
     useEffect(() => {
@@ -67,9 +68,9 @@ const WishlistBook = () => {
   
                 <hr />
                 <div className="flex gap-3">
-                  <button className="btn ">Category: {book.category}</button>
-                  <button className="btn ">Rating: {book.rating}</button>
-                  <button className="btn ">view Details</button>
+                  <button className="btn bg-green-500 ">Category: {book.category}</button>
+                  <button className="btn bg-green-500">Rating: {book.rating}</button>
+                  <Link to={`/bookDetail/${book.bookId}`} ><button className="btn bg-green-500">view Details</button></Link>
                 </div>
               </div>
             </div>
