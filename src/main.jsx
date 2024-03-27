@@ -17,6 +17,7 @@ import BookDetail from './Components/BookDetail/BookDetail';
 import ReadBook from './Components/ReadBook/ReadBook';
 import WishlistBook from './Components/WishlistBook/WishlistBook';
 import Contact from './Components/Contact/Contact';
+import Review from './Components/Review/Review';
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact></Contact>
+      },
+      {
+        path: "review",
+        element: <Review></Review>
       }
      
 

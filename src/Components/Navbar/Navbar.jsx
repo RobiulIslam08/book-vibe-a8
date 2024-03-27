@@ -43,6 +43,22 @@ const Navbar = () => {
                        
                         : ""
                     }>Pages to Read</NavLink>
+                     <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "underline text-[#22be0abf]" : ""
+            }
+          >
+            Contact Us
+          </NavLink>
+          <NavLink
+            to="/review"
+            className={({ isActive }) =>
+              isActive ? "underline text-[#22be0abf]" : ""
+            }
+          >
+            Review
+          </NavLink>
           </ul>
         </div>
         <a className="lg:text-[28px] text-2xl font-bold">Book Vibe</a>
