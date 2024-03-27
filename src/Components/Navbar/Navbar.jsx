@@ -31,7 +31,7 @@ const Navbar = () => {
                        
                         : ""
                     }>Home</NavLink>
-            <NavLink to="listedBook" className={({ isActive }) =>
+            <NavLink to="listedBook/readBook" className={({ isActive }) =>
                       isActive
                         ? "underline text-[#22be0abf]"
                        
@@ -58,7 +58,7 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/listedBook"
+            to="/listedBook/readBook"
             className={({ isActive }) =>
               isActive ? "underline text-[#22be0abf]" : ""
             }
@@ -72,6 +72,22 @@ const Navbar = () => {
             }
           >
             Pages to Read
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "underline text-[#22be0abf]" : ""
+            }
+          >
+            Contact Us
+          </NavLink>
+          <NavLink
+            to="/review"
+            className={({ isActive }) =>
+              isActive ? "underline text-[#22be0abf]" : ""
+            }
+          >
+            Review
           </NavLink>
         </ul>
       </div>

@@ -1,10 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import ReadBook from "../../Components/ReadBook/ReadBook";
+import { getReadBookDataLS } from "../../Utils/LocalStorage";
+// import ReadBook from "../../Components/ReadBook/ReadBook";
+
 
 
 const ListedBook = () => {
     const [tabIndex , setTabIndex] = useState(0)
+    const [books,setBooks] = useState([]);
+    useEffect(()=>{
+      const readBook =  getReadBookDataLS()
+      setBooks(readBook)
+    },[])
+    function sortByRating(){
+     const sortedBookData = [...books].sort((a,b)=> b.rating -a.rating) 
+     setBooks(sortedBookData)
+    }
+
+     console.log(books)
   return (
     <div>
       <div className="bg-base-200 h-[80px] rounded-xl flex justify-center items-center mb-8">
@@ -13,13 +26,16 @@ const ListedBook = () => {
       {/* drodown menu */}
       <div className="flex justify-center items-center mb-36">
         <details className="dropdown">
-          <summary className="m-1 btn">open or close</summary>
+          <summary className="m-1 btn bg-green-500">Short By</summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-            <li>
-              <a>Item 1</a>
+            <li onClick={sortByRating}>
+              <a>Rating</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Number of Pages</a>
+            </li>
+            <li>
+              <a>Published Year</a>
             </li>
           </ul>
         </details>

@@ -16,6 +16,7 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import BookDetail from './Components/BookDetail/BookDetail';
 import ReadBook from './Components/ReadBook/ReadBook';
 import WishlistBook from './Components/WishlistBook/WishlistBook';
+import Contact from './Components/Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: "listedBook",
+        path: "/listedBook",
         element: <ListedBook></ListedBook>,
         children:[
           {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
     
         
       },
+      {
+        path: "contact",
+        element: <Contact></Contact>
+      }
      
 
     ]
