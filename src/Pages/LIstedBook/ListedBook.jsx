@@ -8,16 +8,17 @@ import { getReadBookDataLS } from "../../Utils/LocalStorage";
 const ListedBook = () => {
     const [tabIndex , setTabIndex] = useState(0)
     const [books,setBooks] = useState([]);
+    const [displayBooks, setDisplayBook] = useState([])
     useEffect(()=>{
       const readBook =  getReadBookDataLS()
       setBooks(readBook)
     },[])
     function sortByRating(){
      const sortedBookData = [...books].sort((a,b)=> b.rating -a.rating) 
-     setBooks(sortedBookData)
+     setDisplayBook(sortedBookData)
     }
 
-     console.log(books)
+     console.log(displayBooks)
   return (
     <div>
       <div className="bg-base-200 h-[80px] rounded-xl flex justify-center items-center mb-8">
@@ -44,6 +45,7 @@ const ListedBook = () => {
       {/* tab  */}
       <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden  flex-nowrap dark:bg-gray-100 dark:text-gray-800">
         <Link to={`readBook`}
+         displayBooks={displayBooks}
           onClick={()=>{
             setTabIndex(0);
             

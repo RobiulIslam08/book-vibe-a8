@@ -5,7 +5,10 @@ import { HiMiniUsers } from "react-icons/hi2";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const ReadBook = () => {
+const ReadBook = ({displayBooks}) => {
+  
+  console.log(displayBooks)
+
   const [readData, setReadData] = useState([]);
   useEffect(() => {
     setReadData(getReadBookDataLS());
