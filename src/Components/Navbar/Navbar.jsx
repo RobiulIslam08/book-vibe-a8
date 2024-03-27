@@ -64,7 +64,7 @@ const Navbar = () => {
         <a className="lg:text-[28px] text-2xl font-bold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex  ">
-        <ul className="menu menu-horizontal text-[#131313dc]  text-lg font-medium flex gap-5 px-1">
+        <ul className="menu menu-horizontal text-[#131313dc]  text-base font-medium flex gap-5 px-1">
           <NavLink
             to="/"
             className={({ isActive }) =>
