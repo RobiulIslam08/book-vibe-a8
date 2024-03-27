@@ -2,10 +2,10 @@ import React from "react";
 import { CiStar } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const BooksLayout = ({ book }) => {
-  const { image, rating, category, author, bookName, tags } = book;
+  const {bookId, image, rating, category, author, bookName, tags } = book;
   return (
     <div>
-      <Link to="/bookDetail">
+      <Link to={`/bookDetail/${bookId}`}>
       <div className=" card card-compact w-96 bg-base-100 shadow-xl p-6 rounded-xl  mb-6">
         <div className="bg-slate-200 py-4 rounded-lg">
           <figure>
