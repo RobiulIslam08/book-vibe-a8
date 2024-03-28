@@ -6,10 +6,10 @@ const BooksLayout = ({ book }) => {
   return (
     <div>
       <Link to={`/bookDetail/${bookId}`}>
-      <div className=" card card-compact w-96 bg-base-100 shadow-xl p-6 rounded-xl  mb-6">
+      <div className=" card card-compact lg:w-96 w-80 mx-auto bg-base-100 shadow-xl p-6 rounded-xl  mb-6">
         <div className="bg-slate-200 py-4 rounded-lg">
           <figure>
-            <img src={image} className="h-56 w-48" alt="images" />
+            <img src={image} className="h-56 lg:w-48 w-40" alt="images" />
           </figure>
         </div>
         <div className="card-body">
