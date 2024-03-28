@@ -14,8 +14,8 @@ const BooksLayout = ({ book }) => {
         </div>
         <div className="card-body">
           <div className="flex justify-between text-[#23BE0A] font-bold text-base">
-            <p>{tags[0]}</p>
-            <p>{tags[1]}</p>
+            <p>#{tags[0]}</p>
+            <p>#{tags[1]}</p>
           </div>
           <h1 className="text-[#131313] font-bold text-2xl">
             {bookName.slice(0, 20)}

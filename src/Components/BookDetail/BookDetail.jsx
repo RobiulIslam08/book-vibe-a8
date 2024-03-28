@@ -55,7 +55,7 @@ const BookDetail = () => {
 
                 <p className="text-[#23BE0A] font-bold text-base">{tags}</p> */}
                 {tags && tags.map((tag, index) => (
-    <p className="text-[#23BE0A] font-bold text-base" key={index}>{tag}</p>
+    <p className="text-[#23BE0A] font-bold text-base" key={index}>#{tag}</p>
 ))}
             </div>
             <hr className="mb-6"/>
