@@ -5,7 +5,7 @@ const useBooksData = () => {
     const [loading, setLoading] = useState(true)
     useEffect(()=>{
         const fetchData = async ()=>{
-            const res = await fetch('/Data.json');
+            const res = await fetch('./Data.json');
             const data = await res.json()
             setBooksData(data)
             setLoading(false)
