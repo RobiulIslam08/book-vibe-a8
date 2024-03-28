@@ -6,19 +6,19 @@ import { getReadBookDataLS } from "../../Utils/LocalStorage";
 
 
 const ListedBook = () => {
-    const [tabIndex , setTabIndex] = useState(0)
-    const [books,setBooks] = useState([]);
-    const [displayBooks, setDisplayBook] = useState([])
-    useEffect(()=>{
-      const readBook =  getReadBookDataLS()
-      setBooks(readBook)
-    },[])
-    function sortByRating(){
-     const sortedBookData = [...books].sort((a,b)=> b.rating -a.rating) 
-     setDisplayBook(sortedBookData)
-    }
+  const [tabIndex, setTabIndex] = useState(0)
+  const [books, setBooks] = useState([]);
+  const [displayBooks, setDisplayBook] = useState([])
+  useEffect(() => {
+    const readBook = getReadBookDataLS()
+    setBooks(readBook)
+  }, [])
+  function sortByRating() {
+    const sortedBookData = [...books].sort((a, b) => b.rating - a.rating)
+    setDisplayBook(sortedBookData)
+  }
 
-     console.log(displayBooks)
+  console.log(displayBooks)
   return (
     <div>
       <div className="bg-base-200 h-[80px] rounded-xl flex justify-center items-center mb-8">
@@ -45,32 +45,32 @@ const ListedBook = () => {
       {/* tab  */}
       <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden  flex-nowrap dark:bg-gray-100 dark:text-gray-800">
         <Link to={`readBook`}
-         displayBooks={displayBooks}
-          onClick={()=>{
+          displayBooks={displayBooks}
+          onClick={() => {
             setTabIndex(0);
-            
 
-            
+
+
           }}
           rel="noopener noreferrer"
           href="#"
-          className= {`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex == 0 ? 'border border-b-0': 'border-b'} dark:border-gray-600 dark:text-gray-600`}
+          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex == 0 ? 'border border-b-0' : 'border-b'} dark:border-gray-600 dark:text-gray-600`}
         >
           <span>Read Books</span>
         </Link>
         <Link to={`wishListBook`}
-        onClick={()=> setTabIndex(1)}
+          onClick={() => setTabIndex(1)}
           rel="noopener noreferrer"
           href="#"
-          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex == 1 ? 'border border-b-0': 'border-b'} dark:border-gray-600 dark:text-gray-600`}
+          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex == 1 ? 'border border-b-0' : 'border-b'} dark:border-gray-600 dark:text-gray-600`}
         >
           <span>Wishlist Book</span>
         </Link>
-     
-           
-       
+
+
+
       </div>
-        <Outlet></Outlet>
+      <Outlet></Outlet>
     </div>
   );
 };

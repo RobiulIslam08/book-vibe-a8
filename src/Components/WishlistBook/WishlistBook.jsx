@@ -68,9 +68,9 @@ const WishlistBook = () => {
   
                 <hr />
                 <div className="flex gap-3">
-                  <button className="btn bg-green-500 ">Category: {book.category}</button>
-                  <button className="btn bg-green-500">Rating: {book.rating}</button>
-                  <Link to={`/bookDetail/${book.bookId}`} ><button className="btn bg-green-500">view Details</button></Link>
+                <button className="btn rounded-3xl text-purple-500   bg-base-200">Category: {book.category}</button>
+                <button className="btn bg-base-200 text-sky-600 rounded-3xl">Rating: {book.rating}</button>
+                <Link to={`/bookDetail/${book.bookId}`} ><button className="btn rounded-3xl bg-green-500">view Details</button></Link>
                 </div>
               </div>
             </div>
